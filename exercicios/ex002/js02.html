@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(rgb(255, 255, 0), rgb(107, 107, 2));
+            height: 100vh;
+            position: relative;
+        }
+
+        
+
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+
+            display: block;
+            background-color: white;
+            border-radius: 10px;
+            width: 60vw;
+            height: 50vh;
+        }
+        div#imagem{
+            background-image: url(imagem/pexels-messala-ciulla-1162643.jpg);
+            height: 20vh;
+            width: 100%;
+        }
+        main h1{
+            text-align: center;
+            padding: 10px;
+        }
+        main p{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="imagem">
+
+        </div>
+        <div id="corpo">
+            <h1>Bem vindo!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci repellat modi quibusdam expedita, beatae officia odit dignissimos?</p>
+        </div>
+    </main>
+    <script>
+        /*
+        *TRANSFORMA EM STRING*
+        String(n)
+        n.toString()
+
+        SIMPLIFICAÇÃO
+        `${x}`
+
+        *EXTRAS*
+        s.lenght //conta os caracteres
+        s.toUpperCase() //tudo maiusculo
+        s.toLowerCase() // tudo minusculo
+        */
+        var n1 = Number.parseFloat(window.prompt('digite um numero:'))
+        var n2 = Number.parseFloat(window.prompt('digite outro numero:'))
+        s = (n1+n2)
+        window.alert(`a soma deu ${s}`)
+    </script>
+</body>
+</html>
