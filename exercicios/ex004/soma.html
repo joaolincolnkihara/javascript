@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            position: absolute;
+        }
+        main{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: white;
+            height: 100vh;
+            width: 50vw;
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        p{
+            text-align: center;
+            font-size: 3em;
+        }
+        div>input[type='number']{
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+            width: 50vw;
+            height: 10vh;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        div>input[type='button']{
+            width: 40vw;
+            text-align: center;
+            margin-left: 70px;
+            font-size: 1.2em;
+            background-color: rgb(39, 39, 255);
+            color: white;
+            height: 10vh;
+            border-radius: 10px;
+        }
+        div#res{
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 10px;
+            width: 50vw;
+            height: 10vh;
+            text-align: center;
+            line-height: 300%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando Valores</h1>
+        <div><input type="number" name="number1" id="number1"></div>
+        <p>+</p>
+        <div><input type="number" name="number2" id="number2"></div>
+        <div><input type="button" value="Somar" onclick="somar()"></div>
+        <div id="res">Resultado</div>
+    </main>
+
+    <script>
+            var num1 = window.document.getElementById('number1')
+            var num2 = window.document.getElementById('number2')
+            var res = window.document.getElementById('res')
+        function somar(){
+            var n1 = Number.parseFloat(num1.value)
+            var n2 = Number.parseFloat(num2.value)
+            var s = n1 + n2
+            res.innerHTML = `${s}`
+        }
+    </script>
+</body>
+</html>
