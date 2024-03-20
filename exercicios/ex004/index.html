@@ -23,23 +23,29 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area" onmouseenter="entrar" onmouseout="sair">
         interaja...
     </div>
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entar)
+        a.addEventListener('mouseout', sair)
         function clicar(){
             a.innerText='clicou!'
+            a.style.backgroundColor='red'
         }
         function entrar(){
             a.innerText='entrou!'
         }
         function sair(){
             a.innerText='saiu!'
+            a.style.backgroundColor='green'
         }
         
     </script>
