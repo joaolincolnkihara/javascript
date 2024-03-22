@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>País</h1>
+    <p>Qual seu país?</p><input type="search" name="gpais " id="ipais">
+    <input type="button" value="confirm" onclick="enviar()">
+    <div id="res2"></div>
+    <div id="res"></div>
+
+    <script>
+        
+        function enviar(){
+            var pais = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+            var pais2 = String(pais.value)
+            res2.innerHTML= 'teste'
+            if (pais = 'Brasil') {
+                res.innerHTML ='Você e Brasileiro!'
+            }else(
+                res.innerHTML ='Você e Estranjeiro!'
+            )
+        }
+    </script>
+</body>
+</html>
