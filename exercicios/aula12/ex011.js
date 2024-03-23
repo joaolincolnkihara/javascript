@@ -8,3 +8,4 @@ if (idade <16){
         console.log('voto obrigatorio')
     }
 }
+console.log('teste')
