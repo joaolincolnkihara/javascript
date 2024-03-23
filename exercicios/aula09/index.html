@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(86, 119, 180);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o reultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /*var p1=window.document.getElementsByTagName('p')[0]
+        window.document.write(`esta escrito: ` + p1.innerText)*/
+
+        /*var d= document.getElementById('msg')
+        d.innerHTML='Misericordia'
+        d.style.backgroundColor='#d3b402'
+        d.style.color='black'
+        d.style.padding= '5px'
+        d.style.textAlign='center'*/
+
+        var d = window.document.querySelector('div#msg')
+        d.style.backgroundColor='#d3b402'
+        d.style.color='black'
+
+    </script>
+</body>
+</html>

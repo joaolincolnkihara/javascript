@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    Digite sua velocidade: <input type="search" name="vel" id="ivel">
+    <input type="button" value="enviar" onclick="enviar()">
+    <div id="res2"></div>
+    <div id="res"></div>
+    <div id="res3"></div>
+
+    <script>
+        var vel = window.document.getElementById('ivel')
+        var res = window.document.getElementById('res')
+        function enviar(){
+            var vel2 = Number(vel.value)
+            res2.innerHTML = `Sua velocidade e de ${vel2}`
+            if (vel2 > 80){
+                res.innerHTML= 'Voce esta multado'
+            }else{
+                res.innerHTML='Parabens'
+            }
+            res3.innerHTML = 'Use sempre cinto de segurança'
+        }
+    </script>
+</body>
+</html>
