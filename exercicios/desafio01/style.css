@@ -7,7 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #3E7FD2;
+    background-color: #2b5892;
     position: absolute;
 }
 header{
@@ -24,7 +24,7 @@ main{
     overflow: hidden;
 
     transform: translate(-50%,-50%);
-    background-color: white;
+    background-color: rgb(216, 216, 216);
     padding: 10px;
     border-radius: 20px;
     width: 40vw;
