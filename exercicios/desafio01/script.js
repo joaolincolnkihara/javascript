@@ -2,18 +2,23 @@
 function carregar(){
     var body = window.document.getElementById('body')
     var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('img')
+    var img = window.document.getElementById('imagem')
     var bom = window.document.getElementById('bom')
     var agora = new Date()
     var hora = agora.getHours()
+    var hora = 15
 
     msg.innerText = `Agora são exatamente ${hora} horas`
-    if (hora < 12){
+    if (hora > 0 && hora < 12){
         bom.innerHTML='Bom dia!'
+        
     }else if(hora < 18){
         bom.innerHTML='Boa tarde!'
-        body.style.backgroundColor
-    } else{
+        img.src = 'imagemtarde.jpg'
+        body.style.backgroundColor = '#d1972c'
+    } else if (hora < 23){
         bom.innerHTML='Boa noite!'
+        img.src = 'imagemnoite.jpg'
+        body.style.backgroundColor = '#333644'
     }
 }
