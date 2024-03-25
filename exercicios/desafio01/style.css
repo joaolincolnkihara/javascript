@@ -31,7 +31,7 @@ main{
     height: 50vh;
     box-shadow: 2px 2px 3px #152b4781;
 }
-main>div#msg{
+main>div#msg,div#bom{
     text-align: center;
 }
 footer{
