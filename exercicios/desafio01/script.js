@@ -6,7 +6,7 @@ function carregar(){
     var bom = window.document.getElementById('bom')
     var agora = new Date()
     var hora = agora.getHours()
-    var hora = 15
+    var hora = 20
 
     msg.innerText = `Agora são exatamente ${hora} horas`
     if (hora > 0 && hora < 12){
@@ -14,11 +14,11 @@ function carregar(){
         
     }else if(hora < 18){
         bom.innerHTML='Boa tarde!'
-        img.src = 'imagemtarde.jpg'
+        img.src = 'imagens/imagemtarde.jpg'
         body.style.backgroundColor = '#d1972c'
     } else if (hora < 23){
         bom.innerHTML='Boa noite!'
-        img.src = 'imagemnoite.jpg'
+        img.src = 'imagens/imagemnoite.jpg'
         body.style.backgroundColor = '#333644'
     }
 }
