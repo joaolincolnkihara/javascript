@@ -6,8 +6,6 @@ function carregar(){
     var bom = window.document.getElementById('bom')
     var agora = new Date()
     var hora = agora.getHours()
-    var hora = 20
-
     msg.innerText = `Agora são exatamente ${hora} horas`
     if (hora > 0 && hora < 12){
         bom.innerHTML='Bom dia!'
