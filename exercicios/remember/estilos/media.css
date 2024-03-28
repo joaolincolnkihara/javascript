@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) and(max-width:992px) {
+    main{
+        background-color: yellowgreen;
+        color: aqua;
+    }
+}
+
+@media screen and (min-width:992px) {
+    main{
+        width: 70vw;
+        height: 50vh;
+        background-color: rgb(255, 255, 255);
+    }
+    .input>input[type=email]{
+        width: 63vw;
+    }
+    .input>input[type=password]{
+        width: 63vw;
+    }
+}
