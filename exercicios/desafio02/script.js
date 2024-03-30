@@ -11,36 +11,39 @@ function clicar(){
 
     msg.innerHTML = `Você e ${sex} e tem ${s} anos.`
 
+    if(img.style.display == 'block'){
+        img.style.display = 'none'
+    }else{
+        img.style.display = 'block'
+    }
+
     if (ano2 == 0 || ano2 > atual){
         msg.innerHTML = '[ERRO] Verifique os dados e tente novamente'
     }else{
-        var img = document.createAttribute('img')
-        img.setAttribute('id', 'foto')
         var sex = window.document.getElementsByName('sex')
-        var genero = ""
         if (sex[0].checked){
             genero = 'homem'
             msg.innerHTML = `Você e ${genero} e tem ${s} anos.`
             if ( s>0 && s<10 ){
-                img.setAttribute('src', 'imagens/criança m.jpg')
+                img.src = 'imagens/criança m.jpg'
             }else if ( s<21 ){
-                img.setAttribute('src', 'imagens/jovem m.jpg')
+                img.src = 'imagens/jovem m.jpg'
             }else if ( s<50 ){
-                img.setAttribute('src', 'imagens/adulto m.jpg')
+                img.src = 'imagens/adulto m.jpg'
             }else{
-                img.setAttribute('src', 'imagens/idoso m.jpg')
+                img.src = 'imagens/idoso m.jpg'
             }
         } else{
             genero = 'mulher'
             msg.innerHTML = `Você e ${genero} e tem ${s} anos.`
             if ( s>0 && s<10 ){
-                img.setAttribute('src', 'imagens/criança f.jpg')
+                img.src = 'imagens/criança f.jpg'
             }else if ( s<21 ){
-                img.setAttribute('src', 'imagens/jovem f.jpg')
+                img.src = 'imagens/jovem f.jpg'
             }else if ( s<50 ){
-                img.setAttribute('src', 'imagens/adulto f.jpg')
+                img.src = 'imagens/adulto f.jpg'
             }else{
-                img.setAttribute('src', 'imagens/idoso f.jpg')
+                img.src = 'imagens/idoso f.jpg'
             }
         } 
     }
