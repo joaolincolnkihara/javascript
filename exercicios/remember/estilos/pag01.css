@@ -27,10 +27,18 @@
 
 }
 
+#container-header span{
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 
 #container-main{
     display: flex;
+    
 }
+
 /*ESTILO MENU MOBILE*/
 .menu{
     display: none;
