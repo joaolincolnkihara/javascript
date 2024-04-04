@@ -40,7 +40,7 @@
 }
 
 /*ESTILO MENU MOBILE*/
-.menu{
+menu{
     display: none;
     z-index: 99999;
     background-color: black;
@@ -51,33 +51,43 @@
     right: 0;
 }
 
-.menu ul{
+menu ul{
     list-style-type: none;
     text-align: right;
     font-size: 20px;
     color: white;
 }
 
-.menu ul span.material-symbols-outlined{
+menu ul span.material-symbols-outlined{
     color: green;
     font-size: 30px;
     padding: 20px 8%;
 
 }
 
-.menu ul li a{
+menu ul li a{
     display: block;
     text-decoration: none;
     color: white;
     padding: 20px 8%;
 }
 
-.menu ul li a:hover{
+menu ul li a:hover{
     display: block;
     background-color: green;
     color: white;
 }
 
+.material-symbols-outlined{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    background-color: lightg;
+    color: black;
+}
 
 /*FUNDO ARVORE*/
 .img{
