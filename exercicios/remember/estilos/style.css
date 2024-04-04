@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+    position: absolute;
+    background-image: url(../imagens/natureza\ 2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#tudo>h1{
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div#tudo>p{
+    text-align: center;
+}
+
+main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+    padding: 20px;
+    width: 60vw;
+    background-color: white;
+    border-radius: 20px;
+}
+
+div.input{
+    background-color: #D2DDD5;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+form>div.input>input{
+    padding: 5px;
+    background-color: #D2DDD5;
+    width: 30vw;
+    border: none;
+    border-radius: 8px;
+    
+}
+span.material-symbols-outlined{
+    color: rgb(0, 94, 0);
+}
+
+form>section>div.lembrar{
+    float: left;
+    width: 101px;
+    height: 0px;
+    font-size: 12px;
+    line-height: 50%;
+    margin: 5px 0;
+    padding-bottom: 5px;
+}
+form>section>div.link{
+    float: right;
+    width: 80px;
+    height: 0px;
+    font-size: 10px;
+    margin-top: 6px;   
+}
+
+form>section>div.link>a{
+    text-decoration: none;
+    color: green;
+}
+
+form>section>div.link>a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+/*form>div.enviar{
+    background-color: aqua;
+    margin-top: 40px;
+    text-align: center;
+}*/
+.enviar>input[type=submit]{
+    display: block;
+    margin: auto;
+    width: 40vw;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+

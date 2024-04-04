@@ -64,7 +64,7 @@
         String(n)
         n.toString()
 
-        SIMPLIFICAÇÃO
+        INTERPOLAÇÃO
         `${x}`
 
         *EXTRAS*
@@ -75,18 +75,10 @@
         var n1 = Number.parseFloat(window.prompt('digite um numero:'))
         var n2 = Number.parseFloat(window.prompt('digite outro numero:'))
         s = (n1+n2)
-        window.alert(`a soma deu ${s}`)
-        /*
-        TO FIXED
-        n1 = 1545.5
-        n1.toFixed(2)
-        n1 = 1545.50
-        n1.toFixed(2).replace('.',',')
-        n1= = 1545,50
-
-        n1.toLocaleString('pt-BR', (style: 'currency' currency: 'BRL')
-        n1 = R$1545.50
-        */
+        window.alert(`a soma de ${n1} + ${n2} foi igual a: ${s}`)
+        var nome = window.prompt('digite seu nome')
+        len = nome.length
+        window.alert(`seu nome tem ${len} letras`)
     </script>
 </body>
 </html>
