@@ -22,6 +22,10 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
 }
 
+.pt1{
+    padding-left: 8px;
+}
+
 #container-header:hover{
     background-color: white;
 
@@ -42,14 +46,6 @@
 /*ESTILO MENU MOBILE*/
 menu{
     display: none;
-    
-}
-
-menu  ul{
-    list-style-type: none;
-    text-align: right;
-    font-size: 20px;
-    color: white;
     z-index: 99999;
     background-color: black;
     height: 100vh;
@@ -59,34 +55,39 @@ menu  ul{
     right: 0;
 }
 
-menu  ul span.material-symbols-outlined{
+menu ul{
+    list-style-type: none;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+}
+
+menu ul span.material-symbols-outlined{
     color: green;
     font-size: 30px;
     padding: 20px 8%;
+    text-align: left;
 
 }
 
-menu  ul li a{
+menu ul li a{
     display: block;
     text-decoration: none;
     color: white;
     padding: 20px 8%;
 }
 
-menu  ul li a:hover{
+menu ul li a:hover{
     display: block;
     background-color: green;
     color: white;
 }
 
-/* .material-symbols-outlined{
+.material-symbols-outlined{
     display: block;
     padding: 10px;
     text-align: center;
 }
-.material-symbols-outlined:hover{
-    cursor: pointer;
-} */
 
 
 /*FUNDO ARVORE*/

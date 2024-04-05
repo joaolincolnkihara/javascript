@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+menu{
+    display: none;
+}
+
+.material-symbols-outlined{
+    color: white;
+    font-size: 30px;
+}
+
+#msg{
+    color: black;
+}
