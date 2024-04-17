@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multplas ações</title>
+    <style>
+        button#somar,button#subtrair,button#multiplicar,button#dividir,#divn1,#divn2,#ienviar{
+            display: none;
+            height: 56px;
+            width: 150px;
+        }
+        button#clicar{
+            height: 56px;
+            width: 150px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Múltiplas ações</h1>
+    <button onclick="clicou()" id="clicar">Clique  para iniciar</button>
+    <div id="divn1">Primeiro valor:<input type="number" name="n1" id="in1"></div>
+    <div id="divn2">Segundo valor:<input type="number" name="n2" id="in2"></div>
+    <button id="ienviar" onclick="enviar()">Enviar</button>
+    <button id="somar" onclick="somou()">[1]Somar</button>
+    <button id="subtrair" onclick="subtraiu()">[2]Subtrair</button>
+    <button id="multiplicar" onclick="multiplicou()">[3]Multiplicar</button>
+    <button id="dividir" onclick="dividiu()">[4]Dividir</button>
+    <div id="msg">Clique no botão acima para começar.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

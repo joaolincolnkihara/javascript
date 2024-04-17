@@ -1,7 +1,7 @@
-let num = [6,54,8,98]
+let num = [1,3,5,7]
 num[4]=50
 num.sort()
-num.push(7)/*adiciona na ultima posição*/
+num.push(8)/*adiciona na ultima posição*/
 /*num.length conta todas as casas*/
 /*num.sort cololca em ordem crescente*/
 console.log (`o nosso vetor tem ${num}`)
