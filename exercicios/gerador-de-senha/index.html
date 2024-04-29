@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador desenha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="img"></div>
+        <div class="container">
+            <span>Tamanho <span id="valor"></span> caracteres</span>
+            <br>
+            <input type="range" name="slider" id="islider" min="5" max="20" value="15">
+            <br>
+            <button onclick="gerar()">Gerar senha</button>
+
+            <div id="container-password-hide">
+                <span id="title">A sua senha e:</span>
+                <br>
+                <span id="password">12315454</span>
+                <br>
+                <span id="copy">Clique para copiar</span>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
