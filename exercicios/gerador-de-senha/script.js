@@ -16,18 +16,18 @@ slider.oninput = function(){
     valor.innerHTML = this.value
 }
 
-// function gerar (){
-//     let pass= ""
-//     for( let i=0; n =charset.length; i < slider.value){
-//         pass += charset.charAt(Math.floor(Math.random()*n))
-//     }
-// }
-
-
 function gerar(){
     if (passwordcontainer.style.display == 'none'){
         passwordcontainer.style.display='block'
-    }else{
+    }
+    else{
         passwordcontainer.style.display='none'
     }
+
+    let pass= ""
+    for( let i=0, n =charset.length; i < slider.value; i++){
+        pass += charset.charAt(Math.floor(Math.random()*n))
+    }
+    passwordcontainer.classList.remove('hide')
+    password.innerHTML = pass; 
 }

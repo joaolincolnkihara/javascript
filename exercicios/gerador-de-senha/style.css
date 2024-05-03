@@ -8,6 +8,7 @@
     margin: 0 auto;
 }
 
+/* MEIO */
 body{
     height: 100vh;
     width: 100vw;
@@ -25,6 +26,11 @@ main{
     
 }
 
+div{
+    color: white;
+}
+
+/* IMAGEM */
 div.img{
 
     background-image: url(logo.png);
@@ -35,6 +41,7 @@ div.img{
     height: 20vh;
 }
 
+/* RESULTADO */
 button{
 
     background-color: green;
@@ -44,6 +51,11 @@ button{
     width: 30vw;
     color: white;
     margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.05);
 }
 
 input[type="range"]{
@@ -56,9 +68,37 @@ input[type="range"]{
     text-align: center;
     margin: 14px 0;
     cursor: pointer;
+    width: 30vw;
 }
 
 #title{
     font-size: 23px;
+    margin: 10px 0 10px 0;
 }
 
+#password{
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+    margin-bottom: 10px;
+}
+
+#password:hover{
+    transform: scale(1.05);
+}
+
+#copy{
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#container-password-hide:hover #copy{
+    opacity: 1;
+    visibility: visible;
+}
