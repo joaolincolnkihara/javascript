@@ -24,10 +24,19 @@ function gerar(){
         passwordcontainer.style.display='none'
     }
 
+
+
     let pass= ""
     for( let i=0, n =charset.length; i < slider.value; i++){
         pass += charset.charAt(Math.floor(Math.random()*n))
     }
-    passwordcontainer.classList.remove('hide')
     password.innerHTML = pass; 
+    novaSenha= pass
+}
+
+//  COPIAR 
+function copyPassword(){
+    // clipboard = COPIA
+    navigator.clipboard.writeText(novaSenha)
+    console.log('a')
 }
