@@ -18,8 +18,8 @@ main{
     align-items: center;
 
     display: grid;
-    grid-template-columns: 60vw 10vw;
-    gap: 10px;
+    grid-template-columns: 31vw 10vw;
+    gap: 0px;
     grid-template-areas: 
     "container opcao"
     ;
@@ -34,7 +34,7 @@ main{
     flex-flow: column wrap;
 
     background-color: rgb(29, 28, 28);
-    width: 60vw;
+    width: 405px;
     height: 85vh;
     border-radius: 20px;
     padding: 15px;
@@ -61,11 +61,10 @@ main{
 }
 
 .tela{
-    align-self: center;
 
     background-color: rgb(59, 65, 83);
     height: 20vh;
-    width: 55vw;
+    width: 378px;
     border-radius: 20px;
     margin-bottom: 5px;
     display: flex;
