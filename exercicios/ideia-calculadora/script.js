@@ -1,8 +1,9 @@
 let msg = document.getElementById('msg')
 
-// function resultado(){
-//     msg.innerHTML += 'resultado'
-// }
+ function resultado(){
+    msg.innerHTML = ''
+     msg.innerHTML += `=`
+}
 
 function nove(){
     msg.innerHTML += '9'
@@ -53,3 +54,4 @@ function apagar(){
     //     msg.value = currentValue.slice(0, -1)
     // }
 }
+
