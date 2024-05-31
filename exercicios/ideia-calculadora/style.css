@@ -69,6 +69,7 @@ main{
     margin-bottom: 5px;
     display: flex;
     overflow: hidden;
+    padding: 10px;
 
     justify-content: end;
     align-items: center;
