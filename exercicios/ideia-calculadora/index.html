@@ -15,27 +15,30 @@
                 <div id="msg"></div>
             </div>
             <div class="botoes">
-                <div class='botao' id="nove" onclick="nove()">9</div>
-                <div class='botao' id="oito" onclick="oito()">8</div>
-                <div class='botao' id="sete" onclick="sete()">7</div>
-                <div class='botao' id="seis" onclick="seis()">6</div>
-                <div class='botao' id="cinco" onclick="cinco()">5</div>
-                <div class='botao' id="quatro" onclick="quatro()">4</div>
-                <div class='botao' id="tres" onclick="tres()">3</div>
-                <div class='botao' id="dois" onclick="dois()">2</div>
-                <div class='botao' id="um" onclick="um()">1</div>
-                <div class='botao' id="zero" onclick="zero()">0</div>
-                <div class='botao' id="soma" onclick="soma()">+</div>
-                <div class='botao' id="subtracao" onclick="sub()">-</div>
-                <div class='botao' id="multiplicacao" onclick="mult()">x</div>
-                <!-- <div class='botao' id="divisao">/</div> -->
-                <div class="botao" id="virgula" onclick="vir()">,</div>
-                <div class="botao" id="apagar" onclick="apagar()"><span class="material-symbols-outlined">
+                <div class="botao" id="c" onclick="apagar()">C</div>
+                <div class='botao' id="divisao" onclick="insert('/')">/</div>
+                <div class="botao" id="porcentagem" onclick="insert('%')">%</div>
+
+                <div class='botao' id="nove" onclick="insert('9')">9</div>
+                <div class='botao' id="oito" onclick="insert('8')">8</div>
+                <div class='botao' id="sete" onclick="insert('7')">7</div>
+                <div class='botao' id="seis" onclick="insert('6')">6</div>
+                <div class='botao' id="cinco" onclick="insert('5')">5</div>
+                <div class='botao' id="quatro" onclick="insert('4')">4</div>
+                <div class='botao' id="tres" onclick="insert('3')">3</div>
+                <div class='botao' id="dois" onclick="insert('2')">2</div>
+                <div class='botao' id="um" onclick="insert('1')">1</div>
+                <div class='botao' id="zero" onclick="insert('0')">0</div>
+                <div class='botao' id="soma" onclick="insert('+')">+</div>
+                <div class='botao' id="subtracao" onclick="insert('-')">-</div>
+                <div class='botao' id="multiplicacao" onclick="insert('*')">x</div>
+                <div class="botao" id="virgula" onclick="insert(',')">,</div>
+                <div class="botao" id="apagar" onclick="back()"><span class="material-symbols-outlined">
                     backspace</span></div>
                 <div class="botao" id="igual" onclick="resultado()">=</div>
             </div>
         </div>
-        <div class="opcao">></div>
+        <!-- <div class="opcao">></div> -->
     </main>
 
     <script src="script.js"></script>

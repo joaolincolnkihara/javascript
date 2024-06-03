@@ -17,12 +17,12 @@ main{
     justify-content: center;
     align-items: center;
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 31vw 10vw;
     gap: 0px;
     grid-template-areas: 
     "container opcao"
-    ;
+    ; */
 
     width: 100vw;
     height: 100vh;
@@ -34,8 +34,8 @@ main{
     flex-flow: column wrap;
 
     background-color: rgb(29, 28, 28);
-    width: 405px;
-    height: 85vh;
+    width: 340px;
+    height: 87vh;
     border-radius: 20px;
     padding: 15px;
     /* overflow: hidden; */
@@ -64,7 +64,7 @@ main{
 
     background-color: rgb(59, 65, 83);
     height: 20vh;
-    width: 378px;
+    width: 308px;
     border-radius: 20px;
     margin-bottom: 5px;
     display: flex;
@@ -81,16 +81,17 @@ main{
     /* display: flex;
     flex-flow: column wrap;
     border: 1px solid red; */
-    width: 55vw;
-    height: 50vh;
+    width: 45vw;
+    height: 40vh;
     display: grid;
-    grid-template-columns: 85px 85px 85px 85px;
-    grid-template-rows: 85px 85px 85px 85px;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px;
     gap: 10px;
     grid-template-areas: 
-    "sete oito nove multi"
-    "quatro cinco seis subt"
-    "um dois tres ad"
+    "c porcentagem divisao multi"
+    "sete oito nove subt"
+    "quatro cinco seis ad"
+    "um dois tres igual"
     "zeroo vir apagar igual"
     ;
 
@@ -108,6 +109,15 @@ main{
 }
 
 /* BOTOES */
+#c{
+    grid-area: c;
+}
+#divisao{
+    grid-area: divisao;
+}
+#porcentagem{
+    grid-area: porcentagem;
+}
 #nove{
     grid-area: nove;
 }
@@ -145,8 +155,10 @@ main{
     grid-area: apagar;
 }
 #igual{
+    height: 150px;
     grid-area: igual;
     background-color: rgb(57, 90, 110);
+    border-radius: 15px;
 }
 #soma{
     grid-area: ad;
