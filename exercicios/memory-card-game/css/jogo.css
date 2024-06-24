@@ -10,19 +10,53 @@ main{
 }
 
 .container{
-    display: flex;
-    flex-flow: row wrap;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "div1 div2 div3"
+    "div4 div5 div6"
+    "div7 div8 div9"
+    ;
+    gap: 10px;
+    /* flex-flow: row wrap; */
     background-color: white;
-    width: 30.5vw;
+    width: 500px;
     height: 80vh;
     padding: 20px;
     border-radius: 15px;
 }
 
+#div1{
+    grid-area: div1;
+}
+#div2{
+    grid-area: div2;
+}
+#div3{
+    grid-area: div3;
+}
+#div4{
+    grid-area: div4;
+}
+#div5{
+    grid-area: div5;
+}
+#div6{
+    grid-area: div6;
+}
+#div7{
+    grid-area: div7;
+}
+#div8{
+    grid-area: div8;
+}
+#div9{
+    grid-area: div9;
+}
+
+
 div{
     background-color: black;
-    width: 150px;
-    height: 200px;
     padding: 20px;
     margin-right: 5px;
 
