@@ -9,7 +9,6 @@
     <h1>País</h1>
     <p>Qual seu país?</p><input type="search" name="gpais " id="ipais">
     <input type="button" value="confirm" onclick="enviar()">
-    <div id="res2"></div>
     <div id="res"></div>
 
     <script>
@@ -17,8 +16,7 @@
         function enviar(){
             var pais = window.document.getElementById('ipais')
             var res = window.document.getElementById('res')
-            var pais2 = String(pais.value)
-            res2.innerHTML= 'teste'
+            // var pais2 = String(pais.value)
             if (pais = 'Brasil') {
                 res.innerHTML ='Você e Brasileiro!'
             }else(

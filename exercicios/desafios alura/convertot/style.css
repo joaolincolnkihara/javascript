@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    color: rgb(44, 100, 44);
+    font-size: 0.7em;
+}
+
+main{
+    padding: 50px 50px 0 50px;
+    color: rgb(60, 75, 35);
+    font-size: 1.3em;
+}
+
+main h1{
+    margin: 0 0 10px 0;
+}
+main p{
+    color: black;
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+}
+main h2{
+    font-size: 1em;
+}
+
+input[type="number"]{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid rgba(57, 60, 63, 0.616);
+    padding: 10px;
+}
+
+button{
+    margin: 10px 0 10px 0;
+    color: white;
+    background-color: darkolivegreen;
+    border: none;
+    border-radius: 8px;
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divReal{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid rgba(57, 60, 63, 0.616);
+    padding: 10px;
+}
+
+#ireal{
+    font-size: 0.7em;
+}
+
+.dinheiro{
+    display: flex;
+    gap: 40px;
+}

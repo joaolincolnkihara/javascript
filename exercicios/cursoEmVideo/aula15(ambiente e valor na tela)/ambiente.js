@@ -7,3 +7,4 @@ num.push(8)/*adiciona na ultima posição*/
 console.log (`o nosso vetor tem ${num}`)
 console.log(`O primeiro valor do vetor e ${num[0]}`)
 console.log(num.length)
+console.log(`o numero de quarta posição vale ${num[4]}`)
