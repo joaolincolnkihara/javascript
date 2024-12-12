@@ -6,7 +6,7 @@ function clicou(){
 
     var c = inicio 
     while(c=fim){
-        msg.innerHTML = `${c}`
         c = c+passo
     }
+    msg.innerHTML = `${c}`
 }

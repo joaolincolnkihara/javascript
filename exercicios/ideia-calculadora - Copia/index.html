@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="tela">
+                <div id="msg"></div>
+            </div>
+            <div class="botoes">
+                <div class='botao' id="nove" onclick="num(9)">9</div>
+                <div class='botao' id="oito" onclick="num(8)">8</div>num
+                <div class='botao' id="sete" onclick="num(7)">7</div>
+                <div class='botao' id="seis" onclick="num(6)">6</div>
+                <div class='botao' id="cinco" onclick="num(5)">5</div>
+                <div class='botao' id="quatro" onclick="num(4)">4</div>
+                <div class='botao' id="tres" onclick="num(3)">3</div>
+                <div class='botao' id="dois" onclick="dois(2)">2</div>
+                <div class='botao' id="um" onclick="num(1)">1</div>
+                <div class='botao' id="zero" onclick="num(0)">0</div>
+                <div class='botao' id="soma" onclick="soma()">+</div>
+                <div class='botao' id="subtracao" onclick="sub()">-</div>
+                <div class='botao' id="multiplicacao" onclick="mult()">x</div>
+                <!-- <div class='botao' id="divisao">/</div> -->
+                <div class="botao" id="virgula" onclick="vir()">,</div>
+                <div class="botao" id="apagar" onclick="apagar()"><span class="material-symbols-outlined">
+                    backspace</span></div>
+                <div class="botao" id="igual" onclick="resultado()">=</div>
+            </div>
+        </div>
+        <div class="opcao">></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
